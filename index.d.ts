@@ -1,14 +1,7 @@
+import TriggerTypes from './triggerTypes.d.ts'
+
 declare const ReactNativeHapticFeedback: {
-  trigger(
-    type:
-      | "selection"
-      | "impactLight"
-      | "impactMedium"
-      | "impactHeavy"
-      | "notificationSuccess"
-      | "notificationWarning"
-      | "notificationError"
-  ): void;
+  trigger(type: TriggerTypes): void;
 };
 
 export default ReactNativeHapticFeedback;
